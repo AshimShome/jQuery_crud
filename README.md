@@ -13,7 +13,7 @@ $(document).ready(function(){
                 url     : '{{route("save-shipping-address")}}',
                 type    : 'post',
                // dataType: 'html',
-                data    : $('#ShippingAddressForm').serialize(),
+                data    : $('#ShippingAddressForm').serialize(), // #ShippingAddressForm  Form er id
                 success : function(response){
                     console.log(response);
                     jQuery('#staticBackdrop').modal('hide');
